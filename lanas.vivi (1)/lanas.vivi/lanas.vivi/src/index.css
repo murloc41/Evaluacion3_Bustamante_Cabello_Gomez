@@ -1,0 +1,38 @@
+/* Reset básico para asegurar consistencia entre navegadores */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #222;
+}
+
+/* Mejora el suavizado de fuentes */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hace que los enlaces no tengan subrayado por defecto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hace que las imágenes no excedan el ancho del contenedor */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Elimina el outline azul en botones y campos de formulario al hacer click */
+button, input, textarea, select {
+  outline: none;
+  font-family: inherit;
+}
